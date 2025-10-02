@@ -1,7 +1,7 @@
 
 my_age = 45
 
-user_age = float(input("What is your age? "))
+user_age = int(input("What is your age? "))
 
 if (my_age > user_age):
     print ("I am older than you.")
