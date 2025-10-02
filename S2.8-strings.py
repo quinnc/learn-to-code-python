@@ -16,5 +16,5 @@ print ("Batch number:", product_array[2]);
 print()
 print ("Using slices...")
 print ("Country code:", lot_number[:3]);
-print ("Product code:", lot_number[4:5]);
+print ("Product code:", lot_number[4:9]);
 print ("Batch number:", lot_number[-5:]);
