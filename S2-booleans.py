@@ -11,5 +11,3 @@ else:
     print (num1, "is less than", num2)
     
 
-
-print ("after the if structure")
