@@ -8,7 +8,7 @@ while len(names) < 8:
     new_name = input ("Please enter a name: ")
     names.append(new_name)
 
-name_index = random.randint(0, len(names))
+name_index = random.randint(0, len(names)-1)
 
 print ("The name at index", name_index, "is", names[name_index])
 
@@ -21,7 +21,7 @@ colours=("blue", "green", "yellow", "red", "orange", "purple", "indigo", "violet
 playing=True
 
 while playing:
-    curr_colour_index = random.randint(0, len(colours))
+    curr_colour_index = random.randint(0, len(colours)-1)
     print ("New Game! What colour am I thinking of?")
     print (colours)
     user_colour = ""
@@ -35,9 +35,9 @@ while playing:
         else:
             print ("You guessed it! My colour was", colours[curr_colour_index])
 
-    replay = input ("Would you like to play again? (y/n) ")
+    replay = input ("Would you like to play again? (yes/no) ")
     replay = replay.lower()
 
-    playing = replay == 'y'
+    playing = replay != 'no'
     print ("---------------- End game ---------------------")
     
