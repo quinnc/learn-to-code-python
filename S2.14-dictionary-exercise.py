@@ -13,6 +13,7 @@ print (personal_details.keys())
 print()
 
 requested = input ("Type the key you wish to look up: ")
+requested = requested.lower()
 
-print ("The value of", requested, "is", personal_details[requested])
+print ("The value of", requested, "is", personal_details.get(requested, "not found") )
 
