@@ -22,12 +22,13 @@ playing=True
 
 while playing:
     curr_colour_index = random.randint(0, len(colours))
-    print ("What colour am I thinking of?")
+    print ("New Game! What colour am I thinking of?")
+    print (colours)
     user_colour = ""
 
     while (user_colour != colours[curr_colour_index]):
-        user_colour = input ("Type a colour from this list " + colours + ": ")
-        user_colour = user_colour.lowercase()
+        user_colour = input ("Guess a colour: ")
+        user_colour = user_colour.lower()
 
         if (user_colour != colours[curr_colour_index]):
             print ("Sorry,", user_colour, "is not correct. Try again.")
@@ -35,8 +36,8 @@ while playing:
             print ("You guessed it! My colour was", colours[curr_colour_index])
 
     replay = input ("Would you like to play again? (y/n) ")
-    replay = replay.lowercase()
+    replay = replay.lower()
 
     playing = replay == 'y'
-    print ("-------------------------------------")
+    print ("---------------- End game ---------------------")
     
