@@ -52,7 +52,7 @@ while (not quitgame):
         print ("The correct answer is '", response[QUESTIONS][0][CORRECT], "'.")
         incorrect_answers += 1
 
-    continue_text = input ("Type 'quit' to end the game. ")
+    continue_text = input ("Type 'quit' to end the game or Enter key to get the next question. ")
     quitgame = continue_text.lower() == 'quit'
 
 
