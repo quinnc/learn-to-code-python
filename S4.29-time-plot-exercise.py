@@ -24,5 +24,5 @@ attempt = [1,2,3,4,5]
 plt.plot(attempt, results)
 plt.ylabel("Time (s)")
 plt.xlabel("Round")
-plt.xticks(ticks = attempts, labels= attempt)
+plt.xticks(ticks = attempt, labels= attempt)
 plt.show()
