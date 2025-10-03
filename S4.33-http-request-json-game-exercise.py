@@ -19,7 +19,7 @@ correct_answers = 0
 incorrect_answers = 0
 
 
-while (!quitgame):
+while (not quitgame):
     print ("-0-0-0-0-0-0-0-0-0-0-0-")
     print ("Next question:")
     r = requests.get("https://opentdb.com/api.php?amount=1")
@@ -36,9 +36,9 @@ while (!quitgame):
     curr_incorrect_idx = 0
 
     for x in range(num_answers):
-        if (x = loc_correct_answer):
+        if (x == loc_correct_answer):
             print (response[QUESTIONS][0][CORRECT])
-        else
+        else:
             print (response[QUESTIONS][0][INCORRECT][curr_incorrect_idx])
             curr_incorrect_index += 1
 
@@ -47,7 +47,7 @@ while (!quitgame):
     if (answer.lower() == response[QUESTIONS][0][CORRECT].lower()):
         print ("That is correct!")
         correct_answers += 1
-    else
+    else:
         print ("Sorry, that is not the correct answer.")
         print ("The correct answer is '", response[QUESTIONS][0][CORRECT], "'.")
         incorrect_answers += 1
