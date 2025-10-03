@@ -8,7 +8,7 @@ import json
 
 print ("Welcome to the Open Trivia Game")
 
-quitgame = false
+quitgame = False
 
 QUESTIONS = "results"
 QUESTION = "question"
