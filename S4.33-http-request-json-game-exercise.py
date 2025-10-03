@@ -40,7 +40,7 @@ while (not quitgame):
             print (response[QUESTIONS][0][CORRECT])
         else:
             print (response[QUESTIONS][0][INCORRECT][curr_incorrect_idx])
-            curr_incorrect_index += 1
+            curr_incorrect_idx += 1
 
     answer = input("? ")
 
